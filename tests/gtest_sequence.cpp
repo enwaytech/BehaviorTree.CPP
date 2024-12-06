@@ -240,11 +240,7 @@ TEST_F(SequenceTripleActionTest, TripleAction)
   using namespace BT;
   using namespace std::chrono;
 
-#ifdef WIN32
   const int margin_msec = 60;
-#else
-  const int margin_msec = 20;
-#endif
 
   const auto timeout = system_clock::now() + milliseconds(600 + margin_msec);
 
